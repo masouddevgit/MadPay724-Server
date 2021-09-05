@@ -3,17 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30225.117
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MadPay724.Data", "MadPay724.Data\MadPay724.Data.csproj", "{42AE8072-ECC9-4FEF-AB47-D61C51AF4E88}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MadPay724.Data", "MadPay724.Data\MadPay724.Data.csproj", "{42AE8072-ECC9-4FEF-AB47-D61C51AF4E88}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MadPay724.Common", "MadPay724.Common\MadPay724.Common.csproj", "{D8B3CF3A-8FE7-4972-B5F3-62D86664D902}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MadPay724.Common", "MadPay724.Common\MadPay724.Common.csproj", "{D8B3CF3A-8FE7-4972-B5F3-62D86664D902}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MadPay724.Repo", "MadPay724.Repo\MadPay724.Repo.csproj", "{523051C6-48F0-446F-881F-FF1F062BDA06}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MadPay724.Repo", "MadPay724.Repo\MadPay724.Repo.csproj", "{523051C6-48F0-446F-881F-FF1F062BDA06}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MadPay724.Services", "MadPay724.Services\MadPay724.Services.csproj", "{AA4E66F1-670F-4DEC-B842-E8C19B9517A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MadPay724.Services", "MadPay724.Services\MadPay724.Services.csproj", "{AA4E66F1-670F-4DEC-B842-E8C19B9517A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MadPay724.Infrastructure", "MadPay724.Infrastructure\MadPay724.Infrastructure.csproj", "{1260E843-BE17-4FA9-9132-7689F53539E8}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MadPay724.Presentation", "MadPay724.Presentation\MadPay724.Presentation.csproj", "{ABDDB4BF-436E-4A11-A4C0-5F0F1F1F4E25}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MadPay724.Presentation", "MadPay724.Presentation\MadPay724.Presentation.csproj", "{ABDDB4BF-436E-4A11-A4C0-5F0F1F1F4E25}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,10 +35,6 @@ Global
 		{AA4E66F1-670F-4DEC-B842-E8C19B9517A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AA4E66F1-670F-4DEC-B842-E8C19B9517A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA4E66F1-670F-4DEC-B842-E8C19B9517A7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1260E843-BE17-4FA9-9132-7689F53539E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1260E843-BE17-4FA9-9132-7689F53539E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1260E843-BE17-4FA9-9132-7689F53539E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1260E843-BE17-4FA9-9132-7689F53539E8}.Release|Any CPU.Build.0 = Release|Any CPU
 		{ABDDB4BF-436E-4A11-A4C0-5F0F1F1F4E25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{ABDDB4BF-436E-4A11-A4C0-5F0F1F1F4E25}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ABDDB4BF-436E-4A11-A4C0-5F0F1F1F4E25}.Release|Any CPU.ActiveCfg = Release|Any CPU
