@@ -2,8 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using MadPay724.Data.DatabaseContext;
+using MadPay724.Data.Models;
+using MadPay724.Repo.Infrastructure;
+using MadPay724.Services.Auth.Interface;
+using MadPay724.Services.Auth.Service;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
 
 namespace MadPay724.Presentation.Controllers
 {
@@ -11,17 +15,47 @@ namespace MadPay724.Presentation.Controllers
     [ApiController]
     public class ValuesController : ControllerBase
     {
+
+        private readonly IUnitOfWork<MadpayDbContext> _db;
+        private readonly IAuthService _authService;
+        public ValuesController(IUnitOfWork<MadpayDbContext> dbContext  , IAuthService authService)
+        {
+            _db = dbContext;
+            _authService = authService;
+        }
+
+
         // GET api/values
         [HttpGet]
         public async Task<ActionResult<IEnumerable<string>>> Get()
         {
-            return  new  string[] { "value1", "value2" };
+
+            var user = new User()
+            {
+                Address="",
+                City="",
+                DateOfBirth="",
+                Gender="",
+                IsAcive=true,
+                Name="",
+
+                PasswordHash=new byte[] { 0x20, 0x20, 0x20, 0x20, 0x20, 0x20, 0x20, },
+                PasswordSalt= new byte[] { 0x20, 0x20, 0x20, 0x20, 0x20, 0x20, 0x20, },
+
+                PhoneNumber ="",
+                Status= true,
+                UserName=""
+            };
+
+           var u =   await _authService.Register(user,"asdkasld");
+
+            return Ok(u);
         }
         // GET api/values/5
         [HttpGet("{id}")]
         public async Task<ActionResult<string>> Get(int id)
         {
-            return  "value";
+            return "value";
         }
 
         // POST api/values
